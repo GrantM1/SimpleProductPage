@@ -1,4 +1,72 @@
 * {
  margin: 0;
  padding: 0;
+ box-sizing: border-box;
+}
+
+body {
+ font-family: 'Roboto', sans-serif;
+}
+
+#header {
+ position: fixed;
+ width: 100%;
+ z-index: 10;
+}
+
+.nav-fixed {
+ display: flex;
+ justify-content: space-between;
+ flex: 1 0 auto;
+ background: rgb(219, 119, 73);
+ color: white;
+}
+
+.logo-container {
+display: flex;
+flex-direction: row;
+ align-self: center;
+}
+#header-img {
+ width: 80px;
+ height: 80px;
+ padding: 10px 10px;
+ cursor: pointer;
+}
+.logo-container h2 {
+ font-size: 25px;
+ text-transform: capitalize;
+align-self: center;
+padding: 0 10px 0 0;
+font-style: italic;
+}
+#nav-bar {
+ display: block;
+ align-self: center;
+ background: rgb(219, 119, 73);
+ border-left: 3px solid white;
+ padding: 5px;
+}
+.nav-link {
+display: block;
+align-self: center;
+ padding: 10px 30px;
+ font-size: 20px;
+ text-decoration: none;
+ text-transform: capitalize;
+ color: white;
+ transition: all 0.5s ease;
+}
+
+.nav-link:hover {
+ color: black;
+ background: white;
+}
+
+@media screen and (min-width:780px) {
+.nav-link {
+ display: inline-flex;
+ flex-wrap: wrap;
+ border-radius: 10px;
+ }
 }
