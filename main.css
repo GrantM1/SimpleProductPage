@@ -118,7 +118,7 @@ input {
  width: 220px;
 }
 
-button {
+.btn {
  padding: 10px 10px;
  margin-top: 10px;
  border-radius: 10px;
@@ -133,7 +133,7 @@ button {
 }
 
 
-button:hover {
+.btn:hover {
  color: white;
  background: black;
  border: 2px solid white;
